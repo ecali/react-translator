@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: column;
   font-family: "Josefin Sans", sans-serif;
+  padding: 0 20%;
 }
 
 .header-container {
@@ -24,6 +25,9 @@
   font-size: 32px;
   margin: 0 !important;
 }
+.word-container{
+  width: 100%;
+}
 
 textarea {
   font-family: "Josefin Sans", sans-serif;
@@ -31,4 +35,35 @@ textarea {
   padding: 10px;
   border-radius: 10px;
   border: solid;
+  max-width: 100%;
+  min-width: 90%;
+}
+
+
+
+
+
+
+/* BUTTONS  */
+.main-button{
+  width: 300px;
+  padding: 1rem;
+  background-color: #2E2EFF;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  border: solid 1px #050A30;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+.main-button:disabled{
+  cursor: not-allowed;
+  background-color: gray;
+  color: black;
+  border: none;
+}
+/* SPACER  */
+.spacer{
+  min-height: 20px;
 }

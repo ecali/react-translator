@@ -2,16 +2,17 @@
 interface Props{
     text: string,
     setText: (text: string) => void;
+    disable?: boolean
 }
 
-export const Word = ({text, setText}: Props) => {
+export const Word = ({text, setText, disable}: Props) => {
 
 
   return (
-    <div>
+    <div className="word-container">
       <textarea
+        disabled={disable}
         rows={10}
-        cols={80}
         placeholder="Start typing here..."
         value={text}
         onChange={(e) => setText(e.target.value) }
