@@ -24,3 +24,11 @@
   font-size: 32px;
   margin: 0 !important;
 }
+
+textarea {
+  font-family: "Josefin Sans", sans-serif;
+  resize: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid;
+}
